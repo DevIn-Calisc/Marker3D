@@ -21,6 +21,7 @@
 		1195CA01243C2E100075914C /* HCCarMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195CA00243C2E100075914C /* HCCarMarker.swift */; };
 		1195CA03243C2F430075914C /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195CA02243C2F430075914C /* ImageCache.swift */; };
 		1195CA06243C406F0075914C /* UIImage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195CA05243C406F0075914C /* UIImage+Scale.swift */; };
+		1195CA08243C616F0075914C /* Tesla+Model+X.dae in Resources */ = {isa = PBXBuildFile; fileRef = 1195CA07243C616F0075914C /* Tesla+Model+X.dae */; };
 		BFFC1F08853010686AD5B5CE /* Pods_Marker3D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800553D7968D9C9008C2BC3F /* Pods_Marker3D.framework */; };
 		E56D6A6C20F15DD2BCA3A585 /* Pods_Marker3DTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E979EC381C7C75C80431D8 /* Pods_Marker3DTests.framework */; };
 		F9208320A600A8E33E8C1C81 /* Pods_Marker3DUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D4AF04CD3769F6B62D192F /* Pods_Marker3DUITests.framework */; };
@@ -64,6 +65,7 @@
 		1195CA00243C2E100075914C /* HCCarMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCCarMarker.swift; sourceTree = "<group>"; };
 		1195CA02243C2F430075914C /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		1195CA05243C406F0075914C /* UIImage+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Scale.swift"; sourceTree = "<group>"; };
+		1195CA07243C616F0075914C /* Tesla+Model+X.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "Tesla+Model+X.dae"; sourceTree = "<group>"; };
 		1CB35E5EA155FB82774DCE7D /* Pods-Marker3DUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marker3DUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marker3DUITests/Pods-Marker3DUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		44462656FAEF87E201122B71 /* Pods-Marker3D.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marker3D.debug.xcconfig"; path = "Target Support Files/Pods-Marker3D/Pods-Marker3D.debug.xcconfig"; sourceTree = "<group>"; };
 		61E979EC381C7C75C80431D8 /* Pods_Marker3DTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marker3DTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 		1195CA04243C404F0075914C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				1195CA07243C616F0075914C /* Tesla+Model+X.dae */,
 				1195CA05243C406F0075914C /* UIImage+Scale.swift */,
 			);
 			path = Extension;
@@ -315,6 +318,7 @@
 				1195C9D8243C29570075914C /* LaunchScreen.storyboard in Resources */,
 				1195C9D5243C29570075914C /* Assets.xcassets in Resources */,
 				1195C9D0243C294A0075914C /* Main.storyboard in Resources */,
+				1195CA08243C616F0075914C /* Tesla+Model+X.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
