@@ -1,0 +1,6 @@
+framework module Pods_Marker3D {
+  umbrella header "Pods-Marker3D-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1195C9C9243C294A0075914C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195C9C8243C294A0075914C /* AppDelegate.swift */; };
+		1195C9CB243C294A0075914C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195C9CA243C294A0075914C /* SceneDelegate.swift */; };
+		1195C9CD243C294A0075914C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195C9CC243C294A0075914C /* ViewController.swift */; };
+		1195C9D0243C294A0075914C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1195C9CE243C294A0075914C /* Main.storyboard */; };
+		1195C9D3243C294B0075914C /* Marker3D.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1195C9D1243C294B0075914C /* Marker3D.xcdatamodeld */; };
+		1195C9D5243C29570075914C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1195C9D4243C29570075914C /* Assets.xcassets */; };
+		1195C9D8243C29570075914C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1195C9D6243C29570075914C /* LaunchScreen.storyboard */; };
+		1195C9E3243C29580075914C /* Marker3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195C9E2243C29580075914C /* Marker3DTests.swift */; };
+		1195C9EE243C29580075914C /* Marker3DUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195C9ED243C29580075914C /* Marker3DUITests.swift */; };
+		1195C9FC243C298A0075914C /* Assets.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1195C9FB243C298A0075914C /* Assets.scnassets */; };
+		1195C9FE243C2B620075914C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1195C9FD243C2B620075914C /* CoreLocation.framework */; };
+		1195CA01243C2E100075914C /* HCCarMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195CA00243C2E100075914C /* HCCarMarker.swift */; };
+		1195CA03243C2F430075914C /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195CA02243C2F430075914C /* ImageCache.swift */; };
+		1195CA06243C406F0075914C /* UIImage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1195CA05243C406F0075914C /* UIImage+Scale.swift */; };
+		BFFC1F08853010686AD5B5CE /* Pods_Marker3D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800553D7968D9C9008C2BC3F /* Pods_Marker3D.framework */; };
+		E56D6A6C20F15DD2BCA3A585 /* Pods_Marker3DTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E979EC381C7C75C80431D8 /* Pods_Marker3DTests.framework */; };
+		F9208320A600A8E33E8C1C81 /* Pods_Marker3DUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D4AF04CD3769F6B62D192F /* Pods_Marker3DUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1195C9DF243C29580075914C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1195C9BD243C294A0075914C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1195C9C4243C294A0075914C;
+			remoteInfo = Marker3D;
+		};
+		1195C9EA243C29580075914C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1195C9BD243C294A0075914C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1195C9C4243C294A0075914C;
+			remoteInfo = Marker3D;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1195C9C5243C294A0075914C /* Marker3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marker3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1195C9C8243C294A0075914C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1195C9CA243C294A0075914C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1195C9CC243C294A0075914C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1195C9CF243C294A0075914C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1195C9D2243C294B0075914C /* Marker3D.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marker3D.xcdatamodel; sourceTree = "<group>"; };
+		1195C9D4243C29570075914C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1195C9D7243C29570075914C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1195C9D9243C29570075914C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1195C9DE243C29580075914C /* Marker3DTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marker3DTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1195C9E2243C29580075914C /* Marker3DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker3DTests.swift; sourceTree = "<group>"; };
+		1195C9E4243C29580075914C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1195C9E9243C29580075914C /* Marker3DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marker3DUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1195C9ED243C29580075914C /* Marker3DUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker3DUITests.swift; sourceTree = "<group>"; };
+		1195C9EF243C29580075914C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1195C9FB243C298A0075914C /* Assets.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Assets.scnassets; sourceTree = "<group>"; };
+		1195C9FD243C2B620075914C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1195CA00243C2E100075914C /* HCCarMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCCarMarker.swift; sourceTree = "<group>"; };
+		1195CA02243C2F430075914C /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		1195CA05243C406F0075914C /* UIImage+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Scale.swift"; sourceTree = "<group>"; };
+		1CB35E5EA155FB82774DCE7D /* Pods-Marker3DUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marker3DUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marker3DUITests/Pods-Marker3DUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		44462656FAEF87E201122B71 /* Pods-Marker3D.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marker3D.debug.xcconfig"; path = "Target Support Files/Pods-Marker3D/Pods-Marker3D.debug.xcconfig"; sourceTree = "<group>"; };
+		61E979EC381C7C75C80431D8 /* Pods_Marker3DTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marker3DTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		800553D7968D9C9008C2BC3F /* Pods_Marker3D.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marker3D.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		874272EAF940BB44FD36477B /* Pods-Marker3D.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marker3D.release.xcconfig"; path = "Target Support Files/Pods-Marker3D/Pods-Marker3D.release.xcconfig"; sourceTree = "<group>"; };
+		A6D4AF04CD3769F6B62D192F /* Pods_Marker3DUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marker3DUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF95B7D9F77F9A720570FFE /* Pods-Marker3DTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marker3DTests.debug.xcconfig"; path = "Target Support Files/Pods-Marker3DTests/Pods-Marker3DTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E677F9D5446E27D486C12EF1 /* Pods-Marker3DUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marker3DUITests.release.xcconfig"; path = "Target Support Files/Pods-Marker3DUITests/Pods-Marker3DUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7395E4BDE2B956E9ED782E3 /* Pods-Marker3DTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marker3DTests.release.xcconfig"; path = "Target Support Files/Pods-Marker3DTests/Pods-Marker3DTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1195C9C2243C294A0075914C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1195C9FE243C2B620075914C /* CoreLocation.framework in Frameworks */,
+				BFFC1F08853010686AD5B5CE /* Pods_Marker3D.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195C9DB243C29580075914C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E56D6A6C20F15DD2BCA3A585 /* Pods_Marker3DTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195C9E6243C29580075914C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9208320A600A8E33E8C1C81 /* Pods_Marker3DUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1195C9BC243C294A0075914C = {
+			isa = PBXGroup;
+			children = (
+				1195C9C7243C294A0075914C /* Marker3D */,
+				1195C9E1243C29580075914C /* Marker3DTests */,
+				1195C9EC243C29580075914C /* Marker3DUITests */,
+				1195C9C6243C294A0075914C /* Products */,
+				37113B3A04109C811DE583AF /* Pods */,
+				2FEC3207C0A0272CD9D68B93 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1195C9C6243C294A0075914C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1195C9C5243C294A0075914C /* Marker3D.app */,
+				1195C9DE243C29580075914C /* Marker3DTests.xctest */,
+				1195C9E9243C29580075914C /* Marker3DUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1195C9C7243C294A0075914C /* Marker3D */ = {
+			isa = PBXGroup;
+			children = (
+				1195CA04243C404F0075914C /* Extension */,
+				1195C9FF243C2DF50075914C /* GoogleMap */,
+				1195C9C8243C294A0075914C /* AppDelegate.swift */,
+				1195C9CA243C294A0075914C /* SceneDelegate.swift */,
+				1195C9CC243C294A0075914C /* ViewController.swift */,
+				1195C9CE243C294A0075914C /* Main.storyboard */,
+				1195C9D4243C29570075914C /* Assets.xcassets */,
+				1195C9D6243C29570075914C /* LaunchScreen.storyboard */,
+				1195C9D9243C29570075914C /* Info.plist */,
+				1195C9D1243C294B0075914C /* Marker3D.xcdatamodeld */,
+				1195C9FB243C298A0075914C /* Assets.scnassets */,
+			);
+			path = Marker3D;
+			sourceTree = "<group>";
+		};
+		1195C9E1243C29580075914C /* Marker3DTests */ = {
+			isa = PBXGroup;
+			children = (
+				1195C9E2243C29580075914C /* Marker3DTests.swift */,
+				1195C9E4243C29580075914C /* Info.plist */,
+			);
+			path = Marker3DTests;
+			sourceTree = "<group>";
+		};
+		1195C9EC243C29580075914C /* Marker3DUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1195C9ED243C29580075914C /* Marker3DUITests.swift */,
+				1195C9EF243C29580075914C /* Info.plist */,
+			);
+			path = Marker3DUITests;
+			sourceTree = "<group>";
+		};
+		1195C9FF243C2DF50075914C /* GoogleMap */ = {
+			isa = PBXGroup;
+			children = (
+				1195CA00243C2E100075914C /* HCCarMarker.swift */,
+				1195CA02243C2F430075914C /* ImageCache.swift */,
+			);
+			path = GoogleMap;
+			sourceTree = "<group>";
+		};
+		1195CA04243C404F0075914C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1195CA05243C406F0075914C /* UIImage+Scale.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2FEC3207C0A0272CD9D68B93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1195C9FD243C2B620075914C /* CoreLocation.framework */,
+				800553D7968D9C9008C2BC3F /* Pods_Marker3D.framework */,
+				61E979EC381C7C75C80431D8 /* Pods_Marker3DTests.framework */,
+				A6D4AF04CD3769F6B62D192F /* Pods_Marker3DUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37113B3A04109C811DE583AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44462656FAEF87E201122B71 /* Pods-Marker3D.debug.xcconfig */,
+				874272EAF940BB44FD36477B /* Pods-Marker3D.release.xcconfig */,
+				DBF95B7D9F77F9A720570FFE /* Pods-Marker3DTests.debug.xcconfig */,
+				F7395E4BDE2B956E9ED782E3 /* Pods-Marker3DTests.release.xcconfig */,
+				1CB35E5EA155FB82774DCE7D /* Pods-Marker3DUITests.debug.xcconfig */,
+				E677F9D5446E27D486C12EF1 /* Pods-Marker3DUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1195C9C4243C294A0075914C /* Marker3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1195C9F2243C29580075914C /* Build configuration list for PBXNativeTarget "Marker3D" */;
+			buildPhases = (
+				99F6EEB9C10FF19CF9BA3264 /* [CP] Check Pods Manifest.lock */,
+				1195C9C1243C294A0075914C /* Sources */,
+				1195C9C2243C294A0075914C /* Frameworks */,
+				1195C9C3243C294A0075914C /* Resources */,
+				787EF22A766A6A1569BCC95F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marker3D;
+			productName = Marker3D;
+			productReference = 1195C9C5243C294A0075914C /* Marker3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1195C9DD243C29580075914C /* Marker3DTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1195C9F5243C29580075914C /* Build configuration list for PBXNativeTarget "Marker3DTests" */;
+			buildPhases = (
+				B60E7479D58BD41E68AFDE80 /* [CP] Check Pods Manifest.lock */,
+				1195C9DA243C29580075914C /* Sources */,
+				1195C9DB243C29580075914C /* Frameworks */,
+				1195C9DC243C29580075914C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1195C9E0243C29580075914C /* PBXTargetDependency */,
+			);
+			name = Marker3DTests;
+			productName = Marker3DTests;
+			productReference = 1195C9DE243C29580075914C /* Marker3DTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1195C9E8243C29580075914C /* Marker3DUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1195C9F8243C29580075914C /* Build configuration list for PBXNativeTarget "Marker3DUITests" */;
+			buildPhases = (
+				B68EFAAFD2338D519907E820 /* [CP] Check Pods Manifest.lock */,
+				1195C9E5243C29580075914C /* Sources */,
+				1195C9E6243C29580075914C /* Frameworks */,
+				1195C9E7243C29580075914C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1195C9EB243C29580075914C /* PBXTargetDependency */,
+			);
+			name = Marker3DUITests;
+			productName = Marker3DUITests;
+			productReference = 1195C9E9243C29580075914C /* Marker3DUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1195C9BD243C294A0075914C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Hung Cao";
+				TargetAttributes = {
+					1195C9C4243C294A0075914C = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					1195C9DD243C29580075914C = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 1195C9C4243C294A0075914C;
+					};
+					1195C9E8243C29580075914C = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 1195C9C4243C294A0075914C;
+					};
+				};
+			};
+			buildConfigurationList = 1195C9C0243C294A0075914C /* Build configuration list for PBXProject "Marker3D" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1195C9BC243C294A0075914C;
+			productRefGroup = 1195C9C6243C294A0075914C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1195C9C4243C294A0075914C /* Marker3D */,
+				1195C9DD243C29580075914C /* Marker3DTests */,
+				1195C9E8243C29580075914C /* Marker3DUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1195C9C3243C294A0075914C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1195C9FC243C298A0075914C /* Assets.scnassets in Resources */,
+				1195C9D8243C29570075914C /* LaunchScreen.storyboard in Resources */,
+				1195C9D5243C29570075914C /* Assets.xcassets in Resources */,
+				1195C9D0243C294A0075914C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195C9DC243C29580075914C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195C9E7243C29580075914C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		787EF22A766A6A1569BCC95F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marker3D/Pods-Marker3D-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marker3D/Pods-Marker3D-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99F6EEB9C10FF19CF9BA3264 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marker3D-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B60E7479D58BD41E68AFDE80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marker3DTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B68EFAAFD2338D519907E820 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marker3DUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1195C9C1243C294A0075914C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1195CA03243C2F430075914C /* ImageCache.swift in Sources */,
+				1195C9CD243C294A0075914C /* ViewController.swift in Sources */,
+				1195C9C9243C294A0075914C /* AppDelegate.swift in Sources */,
+				1195C9D3243C294B0075914C /* Marker3D.xcdatamodeld in Sources */,
+				1195CA06243C406F0075914C /* UIImage+Scale.swift in Sources */,
+				1195CA01243C2E100075914C /* HCCarMarker.swift in Sources */,
+				1195C9CB243C294A0075914C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195C9DA243C29580075914C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1195C9E3243C29580075914C /* Marker3DTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1195C9E5243C29580075914C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1195C9EE243C29580075914C /* Marker3DUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1195C9E0243C29580075914C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1195C9C4243C294A0075914C /* Marker3D */;
+			targetProxy = 1195C9DF243C29580075914C /* PBXContainerItemProxy */;
+		};
+		1195C9EB243C29580075914C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1195C9C4243C294A0075914C /* Marker3D */;
+			targetProxy = 1195C9EA243C29580075914C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1195C9CE243C294A0075914C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1195C9CF243C294A0075914C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1195C9D6243C29570075914C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1195C9D7243C29570075914C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1195C9F0243C29580075914C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1195C9F1243C29580075914C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1195C9F3243C29580075914C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44462656FAEF87E201122B71 /* Pods-Marker3D.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BKVRM6AD4;
+				INFOPLIST_FILE = Marker3D/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calisc.Marker3D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1195C9F4243C29580075914C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874272EAF940BB44FD36477B /* Pods-Marker3D.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BKVRM6AD4;
+				INFOPLIST_FILE = Marker3D/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calisc.Marker3D;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1195C9F6243C29580075914C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF95B7D9F77F9A720570FFE /* Pods-Marker3DTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BKVRM6AD4;
+				INFOPLIST_FILE = Marker3DTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calisc.Marker3DTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marker3D.app/Marker3D";
+			};
+			name = Debug;
+		};
+		1195C9F7243C29580075914C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7395E4BDE2B956E9ED782E3 /* Pods-Marker3DTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BKVRM6AD4;
+				INFOPLIST_FILE = Marker3DTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calisc.Marker3DTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marker3D.app/Marker3D";
+			};
+			name = Release;
+		};
+		1195C9F9243C29580075914C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CB35E5EA155FB82774DCE7D /* Pods-Marker3DUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BKVRM6AD4;
+				INFOPLIST_FILE = Marker3DUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calisc.Marker3DUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Marker3D;
+			};
+			name = Debug;
+		};
+		1195C9FA243C29580075914C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E677F9D5446E27D486C12EF1 /* Pods-Marker3DUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BKVRM6AD4;
+				INFOPLIST_FILE = Marker3DUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calisc.Marker3DUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Marker3D;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1195C9C0243C294A0075914C /* Build configuration list for PBXProject "Marker3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1195C9F0243C29580075914C /* Debug */,
+				1195C9F1243C29580075914C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1195C9F2243C29580075914C /* Build configuration list for PBXNativeTarget "Marker3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1195C9F3243C29580075914C /* Debug */,
+				1195C9F4243C29580075914C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1195C9F5243C29580075914C /* Build configuration list for PBXNativeTarget "Marker3DTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1195C9F6243C29580075914C /* Debug */,
+				1195C9F7243C29580075914C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1195C9F8243C29580075914C /* Build configuration list for PBXNativeTarget "Marker3DUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1195C9F9243C29580075914C /* Debug */,
+				1195C9FA243C29580075914C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1195C9D1243C294B0075914C /* Marker3D.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1195C9D2243C294B0075914C /* Marker3D.xcdatamodel */,
+			);
+			currentVersion = 1195C9D2243C294B0075914C /* Marker3D.xcdatamodel */;
+			path = Marker3D.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1195C9BD243C294A0075914C /* Project object */;
+}
